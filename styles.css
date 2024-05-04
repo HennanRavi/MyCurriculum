@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #3b5998;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+section {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#softSkills,
+#hardSkills,
+#education,
+#experience,
+#languages,
+#courses {
+  width: calc(50% - 30px);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+#experience {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+#softSkills,
+#hardSkills {
+  width: calc(50% - 30px);
+}
+
+.skill-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-images li {
+  flex: 0 0 33.33%; /* Limite de 3 imagens por linha */
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.skill-image {
+  width: 100%;
+  height: auto;
+}
+
+.btn-header {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-header:hover {
+  background-color: #333;
+  color: #fff;
+}
