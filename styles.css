@@ -11,16 +11,25 @@ header {
   background-color: #3b5998;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  text-align: center; /* Alinhar o texto ao centro */
+  display: flex;
+  flex-direction: column; /* Colocar os itens em coluna */
+  align-items: center; /* Centralizar os itens na horizontal */
 }
 
 header h1 {
   margin: 0;
+  margin-bottom: 10px; /* Adicionar margem abaixo do título */
 }
 
 header h2 {
-  margin-top: 5px;
+  margin: 0; /* Remover margem superior */
   font-size: 1.2em;
+  margin-bottom: 10px; /* Adicionar margem abaixo do subtítulo */
+}
+
+.btns-left {
+  margin-top: 10px; /* Adicionar margem acima dos botões */
 }
 
 section {
