@@ -11,25 +11,22 @@ header {
   background-color: #3b5998;
   color: #fff;
   padding: 20px;
-  text-align: center; /* Alinhar o texto ao centro */
-  display: flex;
-  flex-direction: column; /* Colocar os itens em coluna */
-  align-items: center; /* Centralizar os itens na horizontal */
+  text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  margin-bottom: 10px; /* Adicionar margem abaixo do título */
-}
-
+header h1,
 header h2 {
-  margin: 0; /* Remover margem superior */
-  font-size: 1.2em;
-  margin-bottom: 10px; /* Adicionar margem abaixo do subtítulo */
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .btns-left {
-  margin-top: 10px; /* Adicionar margem acima dos botões */
+  margin-top: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -38,6 +35,9 @@ section {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(
+    100% - 40px
+  ); /* Ajuste da largura para ocupar toda a largura da tela */
 }
 
 h3 {
@@ -53,36 +53,13 @@ li {
   margin-bottom: 5px;
 }
 
-#softSkills,
-#hardSkills,
-#education,
-#experience,
-#languages,
-#courses {
-  width: calc(50% - 30px);
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  box-sizing: border-box;
-}
-
-#experience {
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-}
-
-#softSkills,
-#hardSkills {
-  width: calc(50% - 30px);
-}
-
 .skill-images {
   display: flex;
   flex-wrap: wrap;
 }
 
 .skill-images li {
-  flex: 0 0 33.33%; /* Limite de 3 imagens por linha */
+  flex: 0 0 33.33%;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -108,4 +85,18 @@ li {
 .btn-header:hover {
   background-color: #333;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    width: calc(50% - 40px);
+    margin-right: 20px;
+  }
 }
