@@ -70,7 +70,8 @@ li {
 }
 
 .btn-header {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 10px 20px;
   margin: 0 5px;
   background-color: #fff;
@@ -80,6 +81,12 @@ li {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-icon {
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+  width: 24px; /* Ajuste a largura da imagem conforme necessário */
+  height: 24px; /* Ajuste a altura da imagem conforme necessário */
 }
 
 .btn-header:hover {
