@@ -3,12 +3,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #faf0e6;
   color: #333;
 }
 
 header {
-  background-color: #3b5998;
+  background-color: #1e3958;
   color: #fff;
   padding: 20px;
   display: flex;
@@ -31,15 +31,16 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 section {
-  margin: 20px;
+  margin: 20px 0;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 40px);
+  width: 25%;
 }
 
 h3 {
@@ -58,6 +59,9 @@ li {
 .skill-images {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  transform: scale(0.7); /* Reduz o tamanho das imagens em 30% */
 }
 
 .skill-images li {
@@ -101,8 +105,10 @@ li {
 }
 
 .collapsible-header {
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
-  background-color: #3b5998;
+  background-color: #1e3958;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -116,6 +122,14 @@ li {
   display: none;
 }
 
+.collapsible-header strong {
+  display: inline-block;
+}
+
+.collapsible-header .show-more {
+  display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
   main {
     display: flex;
@@ -125,7 +139,6 @@ li {
   }
 
   section {
-    width: calc(50% - 40px);
     margin-right: 20px;
   }
 }
@@ -150,7 +163,6 @@ li {
 }
 
 .show-more {
-  margin-left: 5px;
   color: #fff;
   font-size: 14px;
   text-decoration: underline;

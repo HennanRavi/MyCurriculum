@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".collapsible-header");
 
   headers.forEach((header) => {
+    const showMoreBtn = header.querySelector(".show-more");
+    const headerText = header.querySelector("strong").textContent;
+    header.innerHTML = `<strong>${headerText}</strong><span class="show-more">${showMoreBtn.outerHTML}</span>`;
+
     header.addEventListener("click", function () {
       const content = this.nextElementSibling;
       content.style.display =
@@ -11,9 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.display === "block" ? "Mostrar menos" : "Mostrar mais";
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu-btn");
   const menuContent = document.getElementById("menu-content");
 
