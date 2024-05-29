@@ -149,7 +149,9 @@ li {
 
 .menu-content.active {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Alterado para abrir para o lado */
+  align-items: center; /* Alinhar os itens verticalmente */
+  justify-content: flex-end; /* Alinhar os itens à direita */
 }
 
 #menu-btn {
