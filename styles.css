@@ -11,13 +11,17 @@ header {
   background-color: #3b5998;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-header h1,
-header h2 {
+h1,
+h2 {
   margin: 0;
-  margin-bottom: 10px;
+}
+
+h1 {
+  order: -1;
 }
 
 .btns-left {
@@ -35,9 +39,7 @@ section {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: calc(
-    100% - 40px
-  ); /* Ajuste da largura para ocupar toda a largura da tela */
+  width: calc(100% - 40px);
 }
 
 h3 {
@@ -72,7 +74,7 @@ li {
 .btn-header {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin: 0 5px;
   background-color: #fff;
   color: #333;
@@ -83,15 +85,35 @@ li {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-icon {
-  margin-right: 10px; /* Espaço entre a imagem e o texto */
-  width: 24px; /* Ajuste a largura da imagem conforme necessário */
-  height: 24px; /* Ajuste a altura da imagem conforme necessário */
-}
-
 .btn-header:hover {
   background-color: #333;
   color: #fff;
+}
+
+.btn-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.collapsible-content {
+  display: none;
+}
+
+.collapsible-header {
+  cursor: pointer;
+  background-color: #3b5998;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.collapsible-header:hover {
+  background-color: #333;
+}
+
+.collapsible-content.collapsed {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -106,4 +128,35 @@ li {
     width: calc(50% - 40px);
     margin-right: 20px;
   }
+}
+
+.menu-content {
+  display: none;
+}
+
+.menu-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-btn {
+  align-self: flex-end;
+}
+
+.show-more {
+  margin-left: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.show-more {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

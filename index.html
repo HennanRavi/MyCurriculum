@@ -8,40 +8,46 @@
 </head>
 <body>
   <header>
-    <h1><strong>Currículo</strong></h1>
-    <h2><strong>Hennan Raví</strong></h2>
-    <h2><strong>ravihennanks@gmail.com</strong></h2>
+    <a href="index.html" style="text-decoration: underline; color: #fff;">
+      <h1><strong>Currículo - Hennan Raví</strong></h1>
+  </a>
     <div class="btns-left">
-      <a href="https://linktr.ee/ravihennanks?utm_source=linktree_profile_share&ltsid=58462398-1b22-4d10-b060-4ef43409bf6d" target="_blank" class="btn-header">
-        <img src="https://currculohennanravi.netlify.app/img\linktreempresarial.png" alt="LinkTree Empresarial" class="btn-icon"> LinkTree Empresarial
-      </a>
-      <a href="https://sites.google.com/view/offeffect/início?authuser=1" target="_blank" class="btn-header">
-        <img src="https://currculohennanravi.netlify.app/img\offeffectlogo.png" alt="Loja - OFF EFFECT" class="btn-icon"> Loja - OFF EFFECT
-      </a>
-      <a href="https://linktr.ee/portfoliohennanravi" target="_blank" class="btn-header">
-        <img src="https://currculohennanravi.netlify.app/img\Portfólio.png" alt="Portfólio" class="btn-icon"> Portfólio
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=5587991675203&text=Ol%C3%A1,%20vim%20pelo%20Link%20do%20seu%20Curr%C3%ADculo.%0A(Caso%20tenha%20vindo%20por%20outra%20fonte,%20apague%20essa%20mensagem.)" target="_blank" class="btn-header">
-        <img src="https://currculohennanravi.netlify.app/img\WhatsApp.jpeg" alt="WhatsApp" class="btn-icon"> WhatsApp Business
-      </a>
+      <button id="menu-btn" class="btn-header" style="font-size: 24px; width: 40px; height: 40px; padding: 10px;">&#8801;</button>
+      <div id="menu-content" class="menu-content">
+        <a href="https://linktr.ee/ravihennanks?utm_source=linktree_profile_share&ltsid=58462398-1b22-4d10-b060-4ef43409bf6d" target="_blank" class="btn-header">
+          <img src="https://currculohennanravi.netlify.app/img/linktreempresarial.png" alt="LinkTree Empresarial" class="btn-icon"> LinkTree Empresarial
+        </a>
+        <a href="https://sites.google.com/view/offeffect/início?authuser=1" target="_blank" class="btn-header">
+          <img src="https://currculohennanravi.netlify.app/img/offeffectlogo.png" alt="Loja - OFF EFFECT" class="btn-icon"> Loja - OFF EFFECT
+        </a>
+        <a href="https://linktr.ee/portfoliohennanravi" target="_blank" class="btn-header">
+          <img src="https://currculohennanravi.netlify.app/img/Portfólio.png" alt="Portfólio" class="btn-icon"> Portfólio
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5587991675203&text=Ol%C3%A1,%20vim%20pelo%20Link%20do%20seu%20Curr%C3%ADculo.%0A(Caso%20tenha%20vindo%20por%20outra%20fonte,%20apague%20essa%20mensagem.)" target="_blank" class="btn-header">
+          <img src="https://currculohennanravi.netlify.app/img/WhatsApp.jpeg" alt="WhatsApp" class="btn-icon"> WhatsApp Business
+        </a>
+      </div>
     </div>
   </header>
   <main>
-    <section id="SoftSkills" class="with-shadow">
-      <h2><strong>SoftSkills</strong></h2>
-      <ul>
-        <li>Trabalho em Equipe</li>
-        <li>Boa Comunicação</li>
-        <li>Raciocínio Lógico</li>
-        <li>Hard Work</li>
-        <li>Resolução de Problemas</li>
-      </ul>
+    <section id="SoftSkills" class="collapsible-section">
+      <h2 class="collapsible-header"><strong>SoftSkills</strong> <span class="show-more">Mostrar mais</span></h2>
+      <div class="collapsible-content">
+        <ul>
+          <li>Trabalho em Equipe</li>
+          <li>Boa Comunicação</li>
+          <li>Raciocínio Lógico</li>
+          <li>Hard Work</li>
+          <li>Resolução de Problemas</li>
+        </ul>
+      </div>
     </section>
-    <section id="HardSkills">
-      <h2><strong>HardSkills</strong></h2>
-      <h3>Programação e Informática</h3>
-      <h3>Programação</h3>
-      <ul class="skill-images">
+    <section id="HardSkills" class="collapsible-section">
+      <h2 class="collapsible-header"><strong>HardSkills</strong> <span class="show-more">Mostrar mais</span></h2>
+      <div class="collapsible-content">
+        <h3>Programação e Informática</h3>
+        <h3>Programação</h3>
+        <ul class="skill-images">
           <li>
             <img src="https://currculohennanravi.netlify.app/img\JS.png" alt="JavaScript" class="skill-image" style="max-width: 90px; max-height: 90px" />
           </li>
@@ -93,9 +99,9 @@
           style="max-width: 175px; max-height: 175px"
         />
       </li>
-        </ul>
-        <h3>Informática</h3>
-        <ul class="skill-images">
+    </ul>
+    <h3>Informática</h3>
+    <ul class="skill-images">
           <li>
             <img src="https://currculohennanravi.netlify.app/img\word.png"
               alt="Word"
@@ -143,15 +149,18 @@
             />
           </li>
         </ul>
-      </section>
-      <section id="education">
-        <h2><strong>Formação Acadêmica</strong></h2>
+      </div>
+    </section>
+    <section id="education" class="collapsible-section">
+      <h2 class="collapsible-header"><strong>Formação Acadêmica</strong> <span class="show-more">Mostrar mais</span></h2>
+      <div class="collapsible-content">
         <ul>
           <li>
             <strong>Ensino Médio Completo</strong> - Escola Referência em Ensino Médio de
             Arcoverde<br />
             <strong>Erema | Arcoverde - PE</strong>
           </li>
+          <br>
           <li>
             <strong>Ensino Superior em Andamento</strong> - Análise e Desenvolvimento de Sistemas,
             Autarquia de Ensino Superior de Arcoverde<br /><strong
@@ -159,9 +168,11 @@
             >
           </li>
         </ul>
-      </section>
-      <section id="experience">
-        <h2><strong>Experiência Profissional</strong></h2>
+      </div>
+    </section>
+    <section id="experience" class="collapsible-section">
+      <h2 class="collapsible-header"><strong>Experiência Profissional</strong> <span class="show-more">Mostrar mais</span></h2>
+      <div class="collapsible-content">
         <p>
           <strong>Analista e Desenvolvedor de Sistemas</strong> classe júnior e
           <strong>Design Digital.</strong><br><br>
@@ -176,18 +187,22 @@
           <a href="https://sites.google.com/view/offeffect/início?authuser=1"> OFF EFFECT,</a>
           <a href="https://war2.catalog.yampi.io">Escolha seu Esporte (ESE).</a></strong
         >
-        </p>
-      </section>
-      <section id="languages">
-        <h2><strong>Idiomas</strong></h2>
-        <ul>
+      </p>
+    </div>
+  </section>
+  <section id="languages" class="collapsible-section">
+    <h2 class="collapsible-header"><strong>Idiomas</strong> <span class="show-more">Mostrar mais</span></h2>
+    <div class="collapsible-content">
+      <ul>
           <li>Português (PT-BR) - Fluente</li>
           <li>Inglês - Avançado</li>
           <li>Espanhol - Intermediário</li>
         </ul>
-      </section>
-      <section id="courses">
-        <h2><strong>Cursos</strong></h2>
+      </div>
+    </section>
+    <section id="courses" class="collapsible-section">
+      <h2 class="collapsible-header"><strong>Cursos</strong> <span class="show-more">Mostrar mais</span></h2>
+      <div class="collapsible-content">
         <ul>
           <h3>Certificados Fundação Bradesco</h3>
           <li>Curso de <strong>Word 2016</strong></li>
@@ -196,9 +211,10 @@
           <li>Curso de <strong>Engenharia de Requisitos</strong></li>
           <li>Curso de <strong>Excel</strong></li>
         </ul>
-        <p><strong>OBS: </strong>Todos os certificados de cursos estão em minha posse, e podem
-           ser apresentados conforme seja necessário ou solicitado.</p>
-      </section>
-    </main>
-  </body>
+        <p><strong>OBS: </strong>Todos os certificados de cursos estão em minha posse, e podem ser apresentados conforme seja necessário ou solicitado.</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
